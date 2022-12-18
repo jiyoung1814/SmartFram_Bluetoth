@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ble_yellow">#FFE783</color>
+    <color name="ble_yellow2">#FFCA1A</color>
+    <color name="ble_green">#9DDBCE</color>
+    <color name="ble_gray">#676767</color>
+    <color name="ble_gold">#E7D177</color>
+    <color name="tab_selection">#FFCA1A</color>
+    <color name="control_yellow">#E7d177</color>
+</resources>

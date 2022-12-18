@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_button_reset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@color/ble_green"
+            android:fontFamily="@font/yuniverse"
+            android:text="자세히"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_circleCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <org.eazegraph.lib.charts.PieChart
+            android:id="@+id/chart_temp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:egBarWidth="20dp"
+            app:egLegendTextSize="15sp"
+            app:egUsePieRotation="true"
+            app:egValueTextSize="36sp" />
+
+        <org.eazegraph.lib.charts.PieChart
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chart_humi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:egLegendTextSize="15sp"
+            app:egUsePieRotation="true"
+            app:egValueTextSize="36sp"  />
+
+        <org.eazegraph.lib.charts.PieChart
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chart_soil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:egLegendTextSize="15sp"
+            app:egUsePieRotation="true"
+            app:egValueTextSize="36sp" />
+
+        <org.eazegraph.lib.charts.PieChart
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chart_illuminance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:egLegendTextSize="15sp"
+            app:egUsePieRotation="true"
+            app:egValueTextSize="30sp" />
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ble_yellow"
+            android:fontFamily="@font/yuniverse"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_stickCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <view
+                android:id="@+id/line_view"
+                class="im.dacer.androidcharts.LineView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

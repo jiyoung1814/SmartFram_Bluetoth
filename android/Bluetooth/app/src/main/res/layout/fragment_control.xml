@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ble_yellow">
+
+
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@drawable/rec_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/xmlLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/toggle_unselected"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5">
+
+        <TextView
+            android:id="@+id/text_light"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/toggle_selected"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="light"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/text_water"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="water"
+            android:textColor="@color/ble_gray"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+<!--    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup-->
+<!--        android:id="@+id/toggle_group"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/imageView6"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView5"-->
+<!--        app:singleSelection="true"-->
+<!--        app:tbgCheckedButton="@+id/choice_light">-->
+
+<!--        <com.nex3z.togglebuttongroup.button.CircularToggle-->
+<!--            android:id="@+id/choice_light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingStart="10dp"-->
+<!--            android:paddingEnd="10dp"-->
+<!--            android:text="Light"-->
+<!--            app:singleSelection="true"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <com.nex3z.togglebuttongroup.button.CircularToggle-->
+<!--            android:id="@+id/choice_water"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingStart="10dp"-->
+<!--            android:paddingEnd="10dp"-->
+<!--            app:singleSelection="true"-->
+<!--            android:text="Water"-->
+<!--            android:textSize="16sp" />-->
+
+
+<!--    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>-->
+
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="143dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+<!--        <Switch-->
+<!--        android:id="@+id/switch_control"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="256dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:thumb="@drawable/switch_thumb"-->
+<!--        android:track="@drawable/switch_track_on"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ToggleButton
+        android:id="@+id/bt_control"
+        android:layout_width="217dp"
+        android:layout_height="178dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/toggle_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
